@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Change Predictor </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scriptzz.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Career Change Predictor</h1>
+        <h2>Is it time for career-change ,fill details and find by yourself</h2>
+        <form id="career-form">
+            <!-- Dropdown Fields -->
+            <div class="form-group">
+                <label for="field_study">Field of Study:</label>
+                <select id="field_study" name="field_study" required>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Education">Education</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Business">Business</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Law">Law</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Psychology">Psychology</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="current_occupation">Current Occupation:</label>
+                <select id="current_occupation" name="current_occupation" required>
+                    <option value="Business Analyst">Business Analyst</option>
+                    <option value="Economist">Economist</option>
+                    <option value="Biologist">Biologist</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Lawyer">Lawyer</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="Artist">Artist</option>
+                    <option value="Psychologist">Psychologist</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Mechanical Engineer">Mechanical Engineer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <select id="age" name="age" required>
+                    <option value="20-30">20-30</option>
+                    <option value="30-40">30-40</option>
+                    <option value="40-50">40-50</option>
+                    <option value="50-60">50-60</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="years_of_experience">Years of Experience:</label>
+                <select id="years_of_experience" name="years_of_experience" required>
+                    <option value="0-5">0-5</option>
+                    <option value="5-10">5-10</option>
+                    <option value="10-15">10-15</option>
+                    <option value="15-20">15-20</option>
+                    <option value="20-25">20-25</option>
+                    <option value="25-30">25-30</option>
+                    <option value="30-35">30-35</option>
+                    <option value="35-40">35-40</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="education_level">Education Level:</label>
+                <select id="education_level" name="education_level" required>
+                    <option value="High School">High School</option>
+                    <option value="Bachelor’s">Bachelor’s</option>
+                    <option value="Master’s">Master’s</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="industry_growth">Industry Growth Rate:</label>
+                <select id="industry_growth" name="industry_growth" required>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="job_opportunities">Job Opportunities:</label>
+                <select id="job_opportunities" name="job_opportunities" required>
+                    <option value="0-20">0-20</option>
+                    <option value="20-40">20-40</option>
+                    <option value="40-60">40-60</option>
+                    <option value="60-80">60-80</option>
+                    <option value="80-100">80-100</option>
+                    <option value="100+">100+</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="family_influence">Family Influence:</label>
+                <select id="family_influence" name="family_influence" required>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="salary_group">Salary Group:</label>
+                <select id="salary_group" name="salary_group" required>
+                    <option value="30k-60k">30k-60k</option>
+                    <option value="60k-100k">60k-100k</option>
+                    <option value="100k-200k">100k-200k</option>
+                    <option value ="200k+">200k+</option>
+                </select>
+            </div>
+
+            <!-- Horizontal Scroll Sliders -->
+            <div class="slider-group">
+                <label for="work_life_balance">Work-Life Balance:</label>
+                <input type="range" id="work_life_balance" name="work_life_balance" min="1" max="10" value="5">
+                <span id="work_life_balance_value">5</span>
+            </div>
+            <div class="slider-group">
+                <label for="job_security">Job Security:</label>
+                <input type="range" id="job_security" name="job_security" min="1" max="10" value="5">
+                <span id="job_security_value">5</span>
+            </div>
+            <div class="slider-group">
+                <label for="skills_gap">Skills Gap:</label>
+                <input type="range" id="skills_gap" name="skills_gap" min="1" max="10" value="5">
+                <span id="skills_gap_value">5</span>
+            </div>
+            <div class="slider-group">
+                <label for="professional_networks">Professional Networks:</label>
+                <input type="range" id="professional_networks" name="professional_networks" min="1" max="10" value="5">
+                <span id="professional_networks_value">5</span>
+            </div>
+            <div class="slider-group">
+                <label for="technology_adoption">Technology Adoption:</label>
+                <input type="range" id="technology_adoption" name="technology_adoption" min="1" max="10" value="5">
+                <span id="technology_adoption_value">5</span>
+            </div>
+
+            <script>
+                // Attach listeners to all sliders dynamically
+                document.querySelectorAll("input[type='range']").forEach(slider => {
+                    const display = document.getElementById(`${slider.id}_value`);
+                    if (display) {
+                        slider.addEventListener("input", () => {
+                            display.textContent = slider.value;
+                        });
+                    }
+                });
+            </script>
+
+
+            <!-- Additional Dropdown Fields -->
+            <div class="form-group">
+                <label for="career_change">Career Change Interest:</label>
+                <select id="career_change" name="career_change" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mentorship">Mentorship Available:</label>
+                <select id="mentorship" name="mentorship" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="certifications">Certifications:</label>
+                <select id="certifications" name="certifications" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="freelancing">Freelancing Experience:</label>
+                <select id="freelancing" name="freelancing" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mobility">Geographic Mobility:</label>
+                <select id="mobility" name="mobility" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+<!--            <div class="form-group">-->
+
+<!--                <label for="job_satisfaction_yes">Job Satisfaction</label>-->
+<!--                <input type="radio" id="job_satisfaction_yes" name="job_satisfaction" value="true">-->
+<!--                <label for="job_satisfaction_yes">Yes</label>-->
+<!--                <input type="radio" id="job_satisfaction_no" name="job_satisfaction" value="false">-->
+<!--                <label for="job_satisfaction_no">No</label>-->
+
+<!--            </div>-->
+
+<!--&lt;!&ndash;            <button id="test-button">Test Flask</button>&ndash;&gt; for test purposes only-->
+            <button type="submit">Predict Career Path</button>
+        </form>
+    </div>
+</body>
+</html>
+
